@@ -1,0 +1,7 @@
+{
+  "name": "ADC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
