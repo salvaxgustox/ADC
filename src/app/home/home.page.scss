@@ -1,0 +1,23 @@
+div.button {
+    position: relative;
+    width: 80%;
+    height: 20%;
+    background-color: #38fd3b;
+    color: #FFF;
+    margin: 10% 10%;
+    font-stretch: ultra-condensed;
+    font-size: 39pt;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+div.container{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+div.button-warning{
+    background-color: #fd5c38;
+}

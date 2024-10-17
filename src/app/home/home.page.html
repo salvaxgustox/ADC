@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      Microcontroller
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,15 +11,21 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
   
-  <ion-header collapse="condense">
+  <!-- ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">
         Inbox
       </ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header -->
   
-  <ion-list>
+  <!-- ion-list>
     <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
-  </ion-list>
+    
+  </ion-list-->
+  <div class="container">
+    <div class="button" [ngClass]="{'button-warning': !this.bomba}" (click)="onClickButton($event, 'bomba')">Bomba</div>
+    <div class="button" [ngClass]="{'button-warning': !this.sensor}" >Sensor</div>
+    <div class="button" [ngClass]="{'button-warning': !this.llave}" >Llave de paso</div>
+  </div>
 </ion-content>
